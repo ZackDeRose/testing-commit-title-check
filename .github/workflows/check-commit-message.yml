@@ -15,4 +15,29 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           validateSingleCommit: true
+          types: |
+            feat
+            fix
+            docs
+            cleanup
+            chore
+          scopes: |
+            angular
+            core
+            nxdev
+            nextjs
+            gatsby
+            nest
+            node
+            express
+            nx-plugin
+            react
+            web
+            linter
+            storybook
+            testing
+            repo
+            misc
+            devkit
+          requireScope: true
         # Default: https://github.com/commitizen/conventional-commit-types
